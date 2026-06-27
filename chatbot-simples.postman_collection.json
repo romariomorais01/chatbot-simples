@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "Chatbot Simples API",
+    "_postman_id": "12345678-abcd-efgh-ijkl-987654321000",
+    "description": "Collection para testar a API Flask do Chatbot Simples",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Saudação",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/saudacao",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["saudacao"]
+        }
+      }
+    },
+    {
+      "name": "Chat",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"mensagem\": \"oi\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/chat",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["chat"]
+        }
+      }
+    }
+  ]
+}
